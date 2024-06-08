@@ -3,12 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MovieApplication from './components/MovieApplication';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <MovieApplication />
     </div>
   );
-}
+};
 
 export default App;

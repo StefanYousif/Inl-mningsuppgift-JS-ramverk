@@ -4,7 +4,7 @@ import Movies from "./Movies";
 import OrderByGradeButton from "./OrderByGreadeButton";
 import OrderByAlphaButton from "./OrderByAlphaButton";
 
-function MovieApplication () {
+const MovieApplication = () => {
     const [movies, setMovies] = useState([]);
 
     //lägg till film
@@ -13,8 +13,8 @@ function MovieApplication () {
     };
 
     //Radera film
-    const deleteMovie = (title) => {
-        setMovies(movies.filter(movies => movies.title !== title));
+    const deleteMovie = (index) => {
+        setMovies(movies.filter((_, i) => i !== index));
     };
 
     //Sortera filmer (alfabetisk ordning)

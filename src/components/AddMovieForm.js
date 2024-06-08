@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 function AddMovieForm({addMovie}) {
     const[title, setTitle] = useState("");
@@ -30,7 +30,7 @@ function AddMovieForm({addMovie}) {
             <fieldset>
                 <legend>Lägg till en film</legend>
 
-                <label htmlFor="title-field"></label>
+                <label htmlFor="title-field">Titel:</label>
                 <input type="text" id="title-field" className="form-control" value={title} placeholder="Filmtitel..." onChange={(e) => setTitle(e.target.value)} />
                 
                 <label htmlFor="rating-field">Betyg:</label>

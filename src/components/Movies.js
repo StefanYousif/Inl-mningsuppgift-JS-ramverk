@@ -5,10 +5,10 @@ function Movies ({movies, deleteMovie}) {
     return (
         <ul id="movies">
             {movies.map((movie, index) => (
-                <Movie key={index} movie={movie} deleteMovie={deleteMovie} />
+                <Movie key={index} title={movie.title} rating={movie.rating} onDelete={() => deleteMovie(index)} />
             ))}
         </ul>
     );
-}
+};
 
 export default Movies
