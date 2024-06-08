@@ -1,7 +1,6 @@
 import React from "react";
-import deleteIcon from "../Images/delete.png"
-import starIcon from "/Images/star.png";
-import { array } from "prop-types";
+import deleteIcon from "../Images/delete.png";
+import star from "../Images/star.png";
 
 const Movie = ({ title, rating, onDelete }) => {
     const stars = Array(rating).fill(<img src={star} alt="star" className="star-icon" />);
