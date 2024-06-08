@@ -7,11 +7,11 @@ function AddMovieForm({addMovie}) {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        if (Title === "" && rating === "0") {
+        if (title === "" && rating === "0") {
             alert("Du måste ange en titel och ett betyg för att spara filmen");
             return;
         }
-        if (Title === "") {
+        if (title === "") {
             alert("Vänligen ange titel");
             return;
         }
@@ -31,7 +31,7 @@ function AddMovieForm({addMovie}) {
                 <legend>Lägg till en film</legend>
 
                 <label htmlFor="title-field"></label>
-                <input type="text" id="title-field" className="form-control" value={title} onChange={(e) => setTitle(e.target.value)} />
+                <input type="text" id="title-field" className="form-control" value={title} placeholder="Filmtitel..." onChange={(e) => setTitle(e.target.value)} />
                 
                 <label htmlFor="rating-field">Betyg:</label>
                 <select id="rating-field" className="form-control" value={rating} onChange={(e) => setRating(Number(e.target.value))}>
