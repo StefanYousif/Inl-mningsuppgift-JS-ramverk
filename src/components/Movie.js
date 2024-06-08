@@ -14,9 +14,10 @@ const Movie = ({ title, rating, onDelete }) => {
         // Lista som representerar filmen
         <li className="movie-item" data-title={title} data-grade={rating}>
             <span>{title}</span>
-            {stars}
+            
             {/* delete-icon*/}
             <img src={deleteIcon} alt="delete" className="delete-movie-icon" onClick={onDelete} />
+            {stars}
         </li>
     );
 };
