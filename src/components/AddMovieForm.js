@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
 function AddMovieForm({addMovie}) {
+    // useState-krokar för att hantera tillståndet för ingångarna för titel och betyg
     const[title, setTitle] = useState("");
     const [rating, setRating] = useState(0);
 
+    // Funktion för att hantera formulärinlämning
     const handleSubmit = (e) => {
         e.preventDefault();
         
@@ -20,7 +22,9 @@ function AddMovieForm({addMovie}) {
             return;
         }
 
+           // Anropa funktionen addMovie som skickas som prop med titel och betyg
         addMovie(title, rating);
+        //Nollställ formulärfält
         setTitle("");
         setRating(0);
     }
@@ -43,6 +47,7 @@ function AddMovieForm({addMovie}) {
                     <option value="5">5</option>
                 </select>
 
+                {/*Submitbutton*/}
                 <input type="submit" className="btn btn-success mt-3" value="Spara film"></input>
             
             </fieldset>

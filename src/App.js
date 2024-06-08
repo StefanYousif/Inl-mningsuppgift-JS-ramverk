@@ -6,7 +6,8 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <MovieApplication />
+        {/* Rendera komponenten MovieApplication */}
+        <MovieApplication />
     </div>
   );
 };
