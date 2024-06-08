@@ -19,7 +19,7 @@ const MovieApplication = () => {
 
     //Sortera filmer (alfabetisk ordning)
     const sortMoviesByTitle = () => {
-        setMovies([...movies].sort((a, b) => a.title.localCompare(b.title)));
+        setMovies([...movies].sort((a, b) => a.title.localeCompare(b.title)));
     };
 
     //Sortera filmer (Betygordning)
