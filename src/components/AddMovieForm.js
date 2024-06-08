@@ -43,7 +43,7 @@ function AddMovieForm({addMovie}) {
                     <option value="5">5</option>
                 </select>
 
-                <input type="submit" class="btn btn-success mt-3" value="Spara film"></input>
+                <input type="submit" className="btn btn-success mt-3" value="Spara film"></input>
             
             </fieldset>
         </form>
