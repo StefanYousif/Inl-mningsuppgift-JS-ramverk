@@ -7,7 +7,7 @@ function AddMovieForm({addMovie}) {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        if (title === "" && rating === "") {
+        if (title === "" && rating === 0) {
             alert("Du måste ange en titel och ett betyg för att spara filmen");
             return;
         }
@@ -15,7 +15,7 @@ function AddMovieForm({addMovie}) {
             alert("Vänligen ange titel");
             return;
         }
-        if (rating === "") {
+        if (rating === 0) {
             alert("Vänligen ange betyg");
             return;
         }
