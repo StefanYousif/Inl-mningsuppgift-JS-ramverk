@@ -4,7 +4,9 @@ import star from "../Images/star.png";
 
 
 const Movie = ({ title, rating, onDelete }) => {
-    const stars = Array(rating).fill(<img src={star} alt="star" className="star-icon" />);
+    const stars = Array.from({length: rating}, (_, index) => (
+        <img key={index} src={star} alt="star" className="star-icon" />
+    ));
   
     return (
       <li className="movie-item" data-title={title} data-grade={rating}>
