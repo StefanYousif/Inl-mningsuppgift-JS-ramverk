@@ -1,5 +1,5 @@
 import React from "react";
-import deleteIcon from "/public/Images/delet.png"
+import deleteIcon from "../Images/delet.png"
 import starIcon from "../Images/star.png";
 import { array } from "prop-types";
 
