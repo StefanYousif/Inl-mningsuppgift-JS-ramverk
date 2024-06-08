@@ -2,7 +2,7 @@ import React from "react";
 import deleteIcon from "../Images/delete.png";
 import star from "../Images/star.png";
 
-/*
+
 const Movie = ({ title, rating, onDelete }) => {
     const stars = Array(rating).fill(<img src={star} alt="star" className="star-icon" />);
   
@@ -14,7 +14,7 @@ const Movie = ({ title, rating, onDelete }) => {
       </li>
     );
 };
-*/
+/*
 
 function Movie({movie, deleteMovie}) {
     return (
@@ -27,6 +27,6 @@ function Movie({movie, deleteMovie}) {
         </li>
     );
 }
-
+*/
 
 export default Movie
